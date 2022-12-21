@@ -1,0 +1,125 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Overpass', sans-serif;
+}
+#main{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 14px;
+    min-height: 80vh;
+}
+
+/* IMAGE CONTENT */
+#logo{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin: 22px 25px;
+}
+.equi{
+    display: block;
+    border-radius: 14px;
+    max-height: 40vh;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    opacity: 0;
+}
+.overlay{
+    position: absolute;
+    opacity: 0;
+    transition: all 2.5s ease;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 14px;
+}
+#logo:hover .overlay,#logo:hover .overlayFade{
+    opacity: 1;
+}
+#body{
+    margin: 0px 34px;
+}
+
+/* BODY CONTENT */
+.head{
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.head:hover{
+    color: hsl(178, 100%, 50%);
+
+}
+.para{
+    color: #7d92ae;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 19vw;
+    margin-top: 14px;
+}
+#eth-main{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 34px;
+    font-size: 16px;
+    height: 18px;
+}
+.eth{
+    display: flex;
+    color: hsl(178, 100%, 50%);
+}
+.eth p{
+    padding-left: 10px;
+}
+.time-left{
+    display: flex;
+    color: hsl(215, 51%, 70%);
+}
+.time-left p{
+    padding-left: 10px;
+}
+hr{
+    margin: 0px 34px;
+}
+
+/* FOOTER CONTENT */
+#avatar{
+    display: flex;
+    align-items: center;
+    margin: 24px 34px;
+}
+#avatar img{
+    max-height: 4vh;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#avatar p{
+    color: #7d92ae;
+    padding-left: 18px;
+}
+#avatar p a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+#avatar p a:hover{
+    color: hsl(178, 100%, 50%);
+}
